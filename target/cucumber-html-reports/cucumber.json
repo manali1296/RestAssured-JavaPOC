@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 30,
+        "name": "use Patch to update the data",
+        "description": "",
+        "id": "test-student-api-list;use-patch-to-update-the-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 929989000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I go to \"http://localhost\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost",
+                  "offset": 9
+                }
+              ],
+              "location": "StudentStep.i_go_to(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2701248100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I update the data of student",
+            "match": {
+              "location": "StudentStep.i_update_the_data_of_student()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2533400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I verify status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "StudentStep.i_verify_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@5"
+          },
+          {
+            "line": 29,
+            "name": "@TestDemo"
+          }
+        ]
+      }
+    ],
+    "name": "Test Student API List",
+    "description": "",
+    "id": "test-student-api-list",
+    "keyword": "Feature",
+    "uri": "StudentApiTest.feature"
+  }
+]
