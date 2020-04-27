@@ -1,4 +1,6 @@
-Runner\Student.class
-Runner\StudentDemo.class
-Pageobjects\StudentPage.class
+services\StudentService.class
+data\StudentApiDataProvider.class
+models\SucessResponse.class
+models\Student.class
+Runner\StudentRunner.class
 Stepdefination\StudentStep.class

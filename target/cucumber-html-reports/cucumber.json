@@ -3,49 +3,37 @@
     "line": 1,
     "elements": [
       {
-        "line": 30,
-        "name": "use Patch to update the data",
+        "line": 4,
+        "name": "get student list",
         "description": "",
-        "id": "test-student-api-list;use-patch-to-update-the-data",
+        "id": "test-student-api-list;get-student-list",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 929989000,
+              "duration": 8730602700,
               "status": "passed"
             },
-            "line": 31,
-            "name": "I go to \"http://localhost\"",
+            "comments": [
+              {
+                "line": 5,
+                "value": "#When I go to \"http://localhost\""
+              }
+            ],
+            "line": 6,
+            "name": "I get all student data",
             "match": {
-              "arguments": [
-                {
-                  "val": "http://localhost",
-                  "offset": 9
-                }
-              ],
-              "location": "StudentStep.i_go_to(String)"
+              "location": "StudentStep.i_get_all_student_data()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2701248100,
+              "duration": 95891800,
               "status": "passed"
             },
-            "line": 32,
-            "name": "I update the data of student",
-            "match": {
-              "location": "StudentStep.i_update_the_data_of_student()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2533400,
-              "status": "passed"
-            },
-            "line": 33,
+            "line": 7,
             "name": "I verify status code 200",
             "match": {
               "arguments": [
@@ -61,11 +49,253 @@
         ],
         "tags": [
           {
+            "line": 3,
+            "name": "@1"
+          },
+          {
+            "line": 3,
+            "name": "@TestDemo"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "post student list",
+        "description": "",
+        "id": "test-student-api-list;post-student-list",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 765895300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I post student data",
+            "match": {
+              "location": "StudentStep.i_post_student_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1434300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 21
+                }
+              ],
+              "location": "StudentStep.i_verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54429700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "We get Sucess response with message \"Student added\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Student added",
+                  "offset": 37
+                }
+              ],
+              "location": "StudentStep.we_get_Sucess_response_with_message(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@2"
+          },
+          {
+            "line": 9,
+            "name": "@TestDemo"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Delete student data",
+        "description": "",
+        "id": "test-student-api-list;delete-student-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 162024400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I delete id-25 from student data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 12
+                }
+              ],
+              "location": "StudentStep.i_delete_id_from_student_data(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 784600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I verify status code 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 21
+                }
+              ],
+              "location": "StudentStep.i_verify_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@3"
+          },
+          {
+            "line": 15,
+            "name": "@TestDemo"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Put student data",
+        "description": "",
+        "id": "test-student-api-list;put-student-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 148117900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I put some student data",
+            "match": {
+              "location": "StudentStep.i_put_some_student_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1028000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I verify status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "StudentStep.i_verify_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@4"
+          },
+          {
+            "line": 20,
+            "name": "@TestDemo"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "use Patch to update the data",
+        "description": "",
+        "id": "test-student-api-list;use-patch-to-update-the-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 125828200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I update the data of student",
+            "match": {
+              "location": "StudentStep.i_update_the_data_of_student()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 542400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I verify status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "StudentStep.i_verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3044400,
+              "status": "passed"
+            },
             "line": 29,
+            "name": "We get Sucess response with message \"Updated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Updated",
+                  "offset": 37
+                }
+              ],
+              "location": "StudentStep.we_get_Sucess_response_with_message(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
             "name": "@5"
           },
           {
-            "line": 29,
+            "line": 25,
             "name": "@TestDemo"
           }
         ]
